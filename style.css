@@ -170,6 +170,22 @@ body {
     margin-top: 20px;
     color: #F9F07A;
 }
+#NEW-GAME {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #FFC470; /* Button text color */
+    background-color: #8B322C; /* Button background color */
+    border: none;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#NEW-GAME:hover {
+    background-color: #DD5746; /* Hover background color */
+    color: #4793AF; /* Hover text color */
+}
 
 
 
