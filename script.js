@@ -168,6 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     startGame();
 });
-document.querySelector("#NEW GAME").addEventListener("click", () => {
+document.querySelector("#go-back").addEventListener("click", () => {
     window.history.back();
 });
+
