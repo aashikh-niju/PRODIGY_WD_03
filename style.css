@@ -170,7 +170,7 @@ body {
     margin-top: 20px;
     color: #F9F07A;
 }
-#NEW-GAME {
+#go-back {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -182,7 +182,7 @@ body {
     font-family: 'Press Start 2P', cursive;
 }
 
-#NEW-GAME:hover {
+#go-back:hover {
     background-color: #DD5746; /* Hover background color */
     color: #4793AF; /* Hover text color */
 }
