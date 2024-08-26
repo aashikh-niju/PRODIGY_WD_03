@@ -1,0 +1,264 @@
+
+* {
+    color: #E7E8D8;
+    font-family: 'Press Start 2P', cursive; 
+    transition: 0.2s ease-in-out;
+    user-select: none;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #153448;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+
+.start-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10px;
+}
+
+.start-container h1 {
+    margin-bottom: 20px;
+    color: #F9F07A;
+    font-size: 2.5rem; 
+}
+
+.start-container button {
+    background-color: #3C5B6F;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    color: #DFD0B8;
+    transition: background-color 0.3s ease;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.start-container button:hover {
+    background-color: #153448;
+    color: #F9F07A;
+}
+
+.selection-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10px;
+}
+
+.selection-container h1 {
+    margin-bottom: 20px;
+    color: #F9F07A;
+    font-size: 2.5rem;
+}
+
+.selection-container button {
+    background-color: #3C5B6F;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    color: #DFD0B8;
+    transition: background-color 0.3s ease;
+}
+
+.selection-container button:hover {
+    background-color: #153448;
+    color: #F9F07A;
+}
+
+
+.turn-container {
+    width: 170px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.turn-container h3 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #F9F07A;
+}
+
+.turn-container .turn-box {
+    border: 3px solid #B5CFB7;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #BC9F8B;
+}
+
+.turn-container .turn-box:nth-child(even) {
+    border-right: none;
+}
+
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: #B5CFB7;
+    z-index: -1;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+    border: 2px solid #BC9F8B;
+}
+
+.box {
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 700;
+    border: 2px solid #E7E8D8;
+    color: #F9F07A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.box:hover {
+    background-color: #B5CFB7;
+    color: #BC9F8B;
+}
+
+#play-again {
+    background-color: #3C5B6F;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #DFD0B8;
+    display: none;
+}
+
+#play-again:hover {
+    padding: 10px 40px;
+    background-color: #153448;
+    color: #F9F07A;
+}
+
+#results {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #F9F07A;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .main-grid {
+        height: 200px;
+        width: 200px;
+    }
+
+    .box {
+        font-size: 2.5rem;
+    }
+
+    .turn-container {
+        width: 140px;
+        height: 70px;
+    }
+
+    .turn-container .turn-box {
+        font-size: 1.4rem;
+    }
+
+    .start-container h1, .selection-container h1 {
+        font-size: 2rem;
+    }
+
+    .start-container button, .selection-container button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main-grid {
+        height: 180px;
+        width: 180px;
+    }
+
+    .box {
+        font-size: 2rem;
+    }
+
+    .turn-container {
+        width: 120px;
+        height: 60px;
+    }
+
+    .turn-container .turn-box {
+        font-size: 1.2rem;
+    }
+
+    .start-container h1, .selection-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .start-container button, .selection-container button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .main-grid {
+        height: 150px;
+        width: 150px;
+    }
+
+    .box {
+        font-size: 1.8rem;
+    }
+
+    .turn-container {
+        width: 100px;
+        height: 50px;
+    }
+
+    .turn-container .turn-box {
+        font-size: 1rem;
+    }
+
+    .start-container h1, .selection-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .start-container button, .selection-container button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
