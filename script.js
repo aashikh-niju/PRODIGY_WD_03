@@ -168,3 +168,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     startGame();
 });
+document.querySelector("#NEW GAME").addEventListener("click", () => {
+    window.history.back();
+});
