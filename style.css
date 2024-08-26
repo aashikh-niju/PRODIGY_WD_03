@@ -140,7 +140,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', 'Courier New', monospace;
 }
 
 .box:hover {
